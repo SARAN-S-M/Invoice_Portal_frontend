@@ -1,0 +1,156 @@
+/* (#31374a)----> for dark mode */
+:root {
+    --background: #eef2f6 ;  /*#f5f7fa*/
+    --accent: #ffffff;
+    --primary: #1C77FF;
+    --secondary: #FF7C7C;
+    --text: #2c323f;
+    --sidebar: #ffffff;
+    --primary-hover: #1563d7;
+    --tab-hover: #acb1bdc2;
+    --tab-active: #ffffff;
+    --sidebar-focus: #0080ff97;
+    --grid-header: #f1f5f9;
+}
+
+.GoogleSignin {
+    width: 98%;
+    height: 9vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    transition: transform 500ms;
+  }
+  
+  .icon--moon {
+    transition-delay: 200ms;
+  }
+  
+  .icon--sun {
+    transform: scale(0);
+  }
+  
+  #switch:checked + .icon--moon {
+    transform: rotate(360deg) scale(0);
+  }
+  
+  #switch:checked ~ .icon--sun {
+    transition-delay: 200ms;
+    transform: scale(1) rotate(360deg);
+  }
+  
+  #NotificationBell {
+    width: 100%;
+    height: 60%;
+  }
+
+  #BackToHome {
+    width: 100%;
+    height: 60%;
+  }
+
+  #ProfileAvatar {
+    width: 100%;
+    height: 60%;
+  }
+
+  #SideBarHomeIcon {
+    margin-right: 2vw;
+  }
+
+  #EyeIcon {
+    width: 5vw;
+    height: 4vh;
+    cursor: pointer;
+  }
+
+  #outlined-basic {
+    width: 20vw;
+    border: none;
+    height: 100%;
+    margin-right: 2vw;
+  }
+
+  #outlined-basic-date {
+    width: 22.5vw;
+    height: 100%;
+    margin-right: 2vw;
+  }
+
+  #outlined-multiline-static {
+    width: 20vw;
+    border: none;
+    height: 100%;
+  }
+
+  #FormControlRadio {
+    margin-right: 10vw;
+    font-size: 2em;
+  }
+
+  #muiTextField {
+    border-bottom: 10em;
+  }
+
+  #deleteIcon {
+    width: 3vw;
+    height: 3vh
+  }
+  .sidebar-text{
+    position: fixed;
+    margin-left:35px;
+    z-index: 0;
+  }
+  .withdraw-button{
+    margin-right:320px;
+    height: 5vh;
+    width: 9vw;
+    border: none;
+  }
+  @media only screen and (min-width: 1030px){
+    .with-text{
+      font-size: 1vw;
+    }
+  }
+  @media only screen and (max-width: 1023px){
+    .with-text{
+      font-size:1.2vw;
+    }
+  }
+  @media only screen and (max-width: 600px){
+    .with-text{
+      font-size:1.7vw;
+    }
+  }
+  @media only screen and (max-width: 431px){
+    .with-text{
+      font-size:2.4vw;
+    }
+  }
+  /* .invoice-button{
+    width: 9em;
+    height: 6.5vh;
+    line-height: 1.5em;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--primary);
+    margin-top: 1.7vh;
+    transition: color .5s;
+    z-index: 0;
+    font-size: 2.1vh;
+    border-radius: 4px;
+    font-weight:500;
+    color: var(--accent);
+    background: var(--primary);
+    cursor: pointer;
+    margin-left: auto;
+    margin-right:1vw;
+  } */
+
+
